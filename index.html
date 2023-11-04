@@ -173,96 +173,6 @@
 		</table>
 	</center>
 
-	<center>
-		<table align=center width=850px>
-			<br>
-			<tr>
-				<td width=260px>
-					<center>
-						<video controls autoplay muted loop>
-							<source src="./resources/a.mp4" type="video/mp4">
-							Your browser does not support the video tag.
-						  </video>
-					</center>
-				</td>
-			</tr>
-		</table>
-		<table align=center width=850px>
-			<br>
-			<tr>
-				<td>
-					The paper will be presented at the Kyoto Research Park in <a href="https://kyoto-amc.iafor.org/presentation/submission74666/">Kyoto</a>, Japan on Wednesday, 11 October 2023 at 14:50 in Room A during Session 3 as an oral presentation.
-				</td>
-			</tr>
-			<br>
-		</table>
-	</center>
-
-	<hr>
-	<center>
-		<table align=center width=850px>
-			<tr>
-				<td width=240px>
-					<center>
-						<video width="240" controls autoplay muted loop>
-							<source src="./resources/1.mp4" type="video/mp4">
-							Your browser does not support the video tag.
-						  </video>
-					</center>
-				</td>
-				<td width=240px>
-					<center>
-						<video width="240" controls autoplay muted loop>
-							<source src="./resources/8.mp4" type="video/mp4">
-							Your browser does not support the video tag.
-						  </video>
-					</center>
-				</td>
-				<td width=240px>
-					<center>
-						<video width="240" controls autoplay muted loop>
-							<source src="./resources/113.mp4" type="video/mp4">
-							Your browser does not support the video tag.
-						  </video>
-					</center>
-				</td>
-			</tr>
-		</table>
-	</center>
-
-	<center>
-		<table align=center width=850px>
-			<tr>
-				<td width=240px>
-					<center>
-						<video width="240" controls autoplay muted loop>
-							<source src="./resources/155.mp4" type="video/mp4">
-							Your browser does not support the video tag.
-						  </video>
-					</center>
-				</td>
-				<td width=240px>
-					<center>
-						<video width="240" controls autoplay muted loop>
-							<source src="./resources/183.mp4" type="video/mp4">
-							Your browser does not support the video tag.
-						  </video>
-					</center>
-				</td>
-				<td width=240px>
-					<center>
-						<video width="240" controls autoplay muted loop>
-							<source src="./resources/196.mp4" type="video/mp4">
-							Your browser does not support the video tag.
-						  </video>
-					</center>
-				</td>
-			</tr>
-		</table>
-	</center>
-	
-	<hr>
-	
 	<hr>
 
 	<table align=center width=850px>
@@ -293,10 +203,10 @@
 	<hr>
 
 	<table align=center width=850px>
-		<center><h1>Generative Model: Self-Attention GAN</h1></center>
+		<center><h1>Implicit Cross-Domain Diffusion Model for Semiconductor Defect Dection</h1></center>
 		<tr>
 			<td>
-				The proposed art-generating model is realized by a model called Self-Attention Generative Adversarial Network (SAGAN). GANs consists of two adversarial models: a generative model G and a discriminative model D. Generator captures the data distribution, and Discriminator estimates the probability that a sample came from the training data rather than Generator. Both Generator and Discriminator are trained simultaneously.
+				We introduce a deterministic iterative noising and denoising scheme that facilitates image-to-image translation between defect and defect-free wafers. During the training stage, we employ a dual-domain Markov chain for image-to-image translation task, which approximates the data distribution of the defect pattern domain and circuit map domain such that they are correlated with each other. Then, ICDDM learns to progressively denoised to the circuit map from defect pattern. During the inference stage, we utilize a reversed sampling scheme of ICDDM to generate a detailed representation of a circuit map image and obtaining a pixel-wise defect pattern by subtracting the original image from a synthetic image generated during the denoising process. Through this procedure, our method effectively preserves the fine details of the input image that are not affected by the defect while re-painting the defect part with realistic looking circuit map.
 			</td>
 		</tr>
 	</table>
@@ -307,7 +217,7 @@
 		<tr>
 			<td align=center width=400px>
 				<center>
-					<td><img class="round" style="width:900px" src="./resources/SAGAN.png"/></td>
+					<td><img class="round" style="width:900px" src="./resources/1.jpg"/></td>
 				</center>
 			</td>
 		</tr>
