@@ -233,6 +233,9 @@
 			<td>
 				In a CDLDM, the goal is to compress data into a lower-dimensional latent space and then reconstruct it faithfully. Initially, a Variational Autoencoder is trained to create a lower-dimensional representational space that closely resembles the original data space. Subsequently, the encoder &Epsilon;<sub>φ</sub> of VAE compresses the input data, x<sub>0</sub><sup>def</sup>  and x<sub>0</sub><sup>cir</sup>, into a lower-dimensional latent representation, z<sub>0</sub><sup>def</sup>  and z<sub>0</sub><sup>cir</sup>, facilitating efficient data representation. Afterwards, the diffusion process unfolds within the latent space, represented by z<sub>t</sub>~q(z<sub>t</sub>|z<sub>t-1</sub>), introducing controlled noise levels β<sub>t</sub>.
 			</td>
+			<td>
+				During sampling, z<sub>0</sub><sup>def</sup> is translated from the defect pattern domain to the circuit map domain using the trained denoise U-Net ϵ<sub>Θc</sub>, and z<sub>0</sub><sup>cir</sup> translated from the circuit map domain to the defect pattern domain using the trained denoise U-Net ϵ<sub>Θd</sub>.
+			</td>
 		</tr>
 	</table>
 
