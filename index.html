@@ -231,7 +231,7 @@
 		<center><h1>Cross Domain Latent Diffusion Models</h1></center>
 		<tr>
 			<td>
-				In a CDLDM, the goal is to compress data into a lower-dimensional latent space and then reconstruct it faithfully. Initially, a Variational Autoencoder is trained to create a lower-dimensional representational space that closely resembles the original data space. Subsequently, the encoder <p>&Epsilon;<sup>φ</sup></p> of VAE compresses the input data, <p>x<sup>0</sup><sub>def</sub></p> and <p>x<sup>0</sup><sub>cir</sub></p>, into a lower-dimensional latent representation, <p>z<sup>0</sup><sub>def</sub></p> and <p>z<sup>0</sup><sub>cir</sub></p>, facilitating efficient data representation. Afterwards, the diffusion process unfolds within the latent space, represented by <p>z<sup>t</sup></p>~q(<p>z<sup>t</sup></p>|<p>z<sup>t-1</sup></p> ), introducing controlled noise levels <p>β<sup>t</sup></p>.
+				In a CDLDM, the goal is to compress data into a lower-dimensional latent space and then reconstruct it faithfully. Initially, a Variational Autoencoder is trained to create a lower-dimensional representational space that closely resembles the original data space. Subsequently, the encoder &Epsilon;<sup>φ</sup> of VAE compresses the input data, x<sup>0</sup><sub>def</sub> and x<sup>0</sup><sub>cir</sub>, into a lower-dimensional latent representation, z<sup>0</sup><sub>def</sub> and z<sup>0</sup><sub>cir</sub>, facilitating efficient data representation. Afterwards, the diffusion process unfolds within the latent space, represented by z<sup>t</sup>~q(z<sup>t</sup>|z<sup>t-1</sup>), introducing controlled noise levels β<sup>t</sup>.
 			</td>
 		</tr>
 	</table>
